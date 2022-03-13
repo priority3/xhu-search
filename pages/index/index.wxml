@@ -1,0 +1,20 @@
+<view class="index-box">
+  <input type="text" placeholder="请输入搜索信息..." class="but-input" />
+  <map id="myMap"
+      style="width: 100%; height: 667px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      bindtap="handleTap"
+      bindpoitap="handlePoiTap"
+      markers="{{markers}}"
+      scale="16" />
+  <view class="pos-content">
+    <view class="pos-title">
+      <view class="poiName">{{poiName}}</view>
+      <view>捡到了一些有用得东西</view>
+    </view>
+    <van-button type="info" size="small" round custom-style="width: 150rpx;" disabled="{{isBut}}" 
+    bind:click="handleToPub"
+    >失物发布</van-button>
+  </view>
+</view>

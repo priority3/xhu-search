@@ -1,0 +1,39 @@
+<!--pages/info/info.wxml-->
+<!-- <van-nav-bar title="标题" left-text="返回" left-arrow>
+  <van-icon name="search" slot="right" />
+</van-nav-bar> -->
+<view class="info-box">
+  <!-- 头部 -->
+  <view class="info-title">
+    <van-cell-group>
+      <van-cell title="新的朋友" is-link icon="friends-o" title-style="font-size:30rpx"/>
+      <van-cell title="群聊" is-link icon="comment-o" title-style="font-size:30rpx"/>
+      <van-cell title="标签" is-link icon="bookmark-o" title-style="font-size:30rpx"/>
+
+    </van-cell-group>
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+      <van-collapse-item title="屏蔽信息" name="1">
+        在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准
+      </van-collapse-item>
+    </van-collapse>
+  </view>
+
+    <!-- 第一条消息 -->
+  <view class="info-item" wx:for="{{infolist}}" wx:key="id">
+    <view class="item">
+      <image src="{{item.avatarUrl}}" mode="scaleToFill"/>
+      <view >
+        <view class="item-name">{{item.name}}</view>
+        <view class="item-cont">{{item.infoCont}}</view>
+      </view>
+    </view>
+    <view class="item-right">
+      <view class="item-time">{{item.time}}</view>
+      <view wx:if="{{item.info}}" class="item-red">{{item.info}}</view>
+    </view>
+  </view>
+  
+
+
+  <view class="bottom"></view>
+</view>

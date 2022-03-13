@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2910856 */
+  src: url("//at.alicdn.com/t/font_2910856_rxw65kqirc9.woff2?t=1636619403684")
+      format("woff2"),
+    url("//at.alicdn.com/t/font_2910856_rxw65kqirc9.woff?t=1636619403684")
+      format("woff"),
+    url("//at.alicdn.com/t/font_2910856_rxw65kqirc9.ttf?t=1636619403684")
+      format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jian:before {
+  content: "\e604";
+  color: #8f8f8f;
+}
+
+.icon-tianjiatubiao:before {
+  content: "\e60b";
+}
+
+.icon-yonghuhuaxiang:before {
+  content: "\e639";
+}
+
+.icon-zongmaotu:before {
+  content: "\e631";
+}
+
+.icon-fsux_tubiao_shijianzhoutu:before {
+  content: "\e602";
+}
+
+.icon-pre_icon_wodejifen:before {
+  content: "\e636";
+}
+
+.icon-yejipaiming:before {
+  content: "\e603";
+}
+
+.icon-jieguofabu:before {
+  content: "\e624";
+}
+
+.icon-shuju:before {
+  content: "\e726";
+}
+
+.icon-fankui:before {
+  content: "\e61c";
+}
+
+.icon-biaoqian_o:before {
+  content: "\eb47";
+}
+
+.icon-qunliao:before {
+  content: "\e690";
+}
+
+.icon-tianjiayonghu:before {
+  content: "\e6c9";
+}
+
+.icon-guanzhu:before {
+  content: "\e601";
+}
+
+.icon-dianzan:before {
+  content: "\e8ad";
+}
+
+.icon-pinglun:before {
+  content: "\e8b4";
+}
+
+.icon-fankuitonggao:before {
+  content: "\e641";
+}
+
+.icon-shatan_beibao:before {
+  content: "\e6c1";
+}
+
+.icon-shatan_zhaoxiangji:before {
+  content: "\e6c2";
+}
+
+.icon-shatan_lubiao:before {
+  content: "\e6c3";
+}
+
+.icon-shatan_wanju:before {
+  content: "\e6c4";
+}
+
+.icon-laba:before {
+  content: "\e600";
+}
+
+.icon-daohangdizhi:before {
+  content: "\e65e";
+}
+
+.icon-home:before {
+  content: "\e6b8";
+}
+
+.icon-shouye:before {
+  content: "\e630";
+}
+
+.icon-icon_fabu:before {
+  content: "\eb88";
+}
+
+.icon-deleteuser:before {
+  content: "\e7ae";
+}
+
+.icon-home-copy:before {
+  content: "\eb89";
+}
+
+.icon-shouye-copy:before {
+  content: "\eb8a";
+}
+
+.icon-icon_fabu-copy:before {
+  content: "\eb8b";
+}
+
+.icon-deleteuser-copy:before {
+  content: "\eb8c";
+}

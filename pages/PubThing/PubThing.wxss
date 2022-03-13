@@ -1,0 +1,141 @@
+/* pages/PubThing/PubThing.wxss */
+
+.pub-content {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.pub-content textarea {
+  height: 200rpx;
+}
+
+.img-box {
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.addimg-box {
+  width: 170rpx;
+  height: 170rpx;
+  box-shadow: 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 25rpx;
+  color: gray;
+}
+
+.addimg-box image {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.image-box image {
+  border: 1rpx solid rgba(0, 0, 0, 0.2);
+  margin-left: 10rpx;
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.image-box {
+  position: relative;
+}
+
+.del-pos {
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+}
+
+/* ------------------------- */
+.pub-category {
+  height: 300rpx;
+  width: 100%;
+  background-color: #fff;
+  border-top: 16rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.category-title,
+.category-cont {
+  display: flex;
+  justify-content: flex-start;
+}
+.item-title {
+  text-align: center;
+  line-height: 100rpx;
+  width: 300rpx;
+  height: 100rpx;
+}
+
+.but-item {
+  line-height: 100rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.but-item .van-button {
+  width: 130rpx;
+  height: 70rpx;
+  margin-left: 50rpx;
+}
+
+.category-cont {
+  height: 200rpx;
+}
+
+.item-box {
+  width: 400rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: rgb(56, 102, 172); */
+  margin-top: 15rpx;
+  color: gray;
+}
+
+.item-id {
+  flex: 25%;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 2rpx solid rgba(0, 0, 0, 0.2);
+  border-radius: 50rpx;
+  margin-left: 10rpx;
+  /* border: 2rpx solid rgba(240, 227, 48, 1);
+  color: rgb(240, 227, 48); */
+}
+
+.pub-rel-box {
+  margin-top: 90rpx;
+}
+
+.pub-rel {
+  /* margin-top: 40rpx; */
+  border-top: 16rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.rel-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item-inp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 450rpx;
+}
+.item-inp input {
+  width: 100%;
+}
+
+.sub-btn {
+  width: 100%;
+  height: 50rpx;
+  margin: 50rpx auto;
+  box-sizing: border-box;
+}
+.sub-btn .van-button {
+  width: 90% !important;
+  margin: 0 auto;
+}

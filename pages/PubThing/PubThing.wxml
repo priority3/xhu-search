@@ -1,0 +1,78 @@
+<!--pages/PubThing/PubThing.wxml-->
+<view class="pub-content">
+  <textarea placeholder="请描述丢失或者捡到的物品及特征噢~" placeholder-style="font-size:30rpx" bindblur="handleStorgeText">
+  
+  </textarea>
+  <view class="img-box" >
+    <view wx:for="{{imags}}" wx:key="index" class="image-box">
+      <image src="{{item}}" mode="aspectFit" bindtap="previewImg" data-imgid="{{index}}"/>
+      <text class="iconfont icon-jian del-pos" bindtap="delImage" data-imgid="{{index}}"></text>
+    </view>
+    <view class="addimg-box" bindtap="chooseImg">
+      <image src="../../static/img/addphoto.png" mode="scaleToFill"/>
+      <view>添加图片</view>
+    </view>
+  </view>
+  
+</view>
+
+<view class="pub-category">
+  <view class="category-title">
+    <view class="item-title">发布类型</view>
+    <view class="but-item">     
+      <van-button data-name="0" round bind:click="onClick" type="{{isPrimary[0]}}">丢失</van-button>
+      <van-button data-name="1" round bind:click="onClick" type="{{isPrimary[1]}}">捡到</van-button>  
+    </view>
+  </view>
+  <van-divider />
+  <view class="category-cont">
+    <view class="item-title">物品类型</view>
+    <view class="item-box">
+      <view class="item-id" wx:for="{{itmeBox}}" wx:key ="index" data-id="{{index}}" bindtap="handleChangeItem" style="{{itemStyle[index]}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="pub-rel-box">
+  <view class="pub-rel">
+    <view class="rel-box">
+      <view class="item-title">
+        院系/部门
+      </view>
+      <view class="item-inp">
+        <input placeholder="请填写院系/部门" bindblur="handleDepartment"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="pub-rel">
+    <view class="rel-box">
+      <view class="item-title">
+        丢失/上交
+      </view>
+      <view class="item-inp">
+        <input placeholder="请填写丢失/上交地点" bindblur="handlePosition"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="pub-rel">
+    <view class="rel-box">
+      <view class="item-title">
+        练习方式
+      </view>
+      <view class="item-inp">
+        <input placeholder="固话请加区号(例如：027-)" bindblur="handleContactInfo"/>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<view class="sub-btn">
+  <van-button type="primary" block bind:click="handlePub">发布</van-button>
+</view>

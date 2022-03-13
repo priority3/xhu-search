@@ -1,0 +1,128 @@
+<!-- pages/publish/publish.wxml -->
+<!-- 轮播图 -->
+<view class="pub-box">
+  <swiper class="rotation" indicator-dots="false" indicator-color="rgba(0,0,0,.3)" autoplay="true" current="0" interval="5000" duration="1000">
+    <swiper-item>
+      <image src="../../static/img/findTwo.jpg" alt="" mode="scaleToFill" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../static/img/findOne.jpg" alt="" mode="scaleToFill" />
+    </swiper-item>
+  </swiper>
+  <view class="pub-title">
+    <text class="title-left">最新公告</text>
+    <text class="title-right" space="ensp">所有 >></text> 
+  </view>
+  <view class="title-content">
+    <van-notice-bar
+      left-icon="volume-o"
+      text="11-1 失物招领后台管理系统 在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
+      color="#80c6ea"
+      background="#fff"
+      speed="60"
+      mode="link"
+    />
+    <van-notice-bar
+      left-icon="volume-o"
+      text="11-3 失物认领 技术是开发它的人的共同灵魂。尤指电脑游戏或聊天室中代表使用者的"
+      color="#80c6ea"
+      background="#fff"
+      speed="55"
+      mode="link"
+
+    />
+    
+    <van-notice-bar
+      left-icon="volume-o"
+      text="11-5 失物招领小程序 在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准"
+      color="#80c6ea"
+      background="#fff"
+      speed="50"
+      mode="link"
+
+    />
+  </view>
+
+  <!-- 功能 -->
+  <view class="map-function">
+    <view>
+      <image src="../../static/img/pick.png" mode="scaleToFill"/>
+      <text >捡到物品</text>
+    </view>
+    <view>
+      <image src="../../static/img/lost.png" mode="scaleToFill"/>
+      <text >丢失物品</text>
+    </view><view>
+      <image src="../../static/img/pub.png" mode="scaleToFill"/>
+      <text >公告列表</text>
+    </view><view bindtap="handletoIndexMap">
+      <image src="../../static/img/map.png" mode="scaleToFill"/>
+      <text >物品查询</text>
+    </view><view>
+      <image src="../../static/img/feedback.png" mode="scaleToFill"/>
+      <text >留言反馈</text>
+    </view>
+  </view>
+
+  <view class="the-new">
+    <view class="new-title">最新丢失物品信息</view>
+      <view class="new-item">
+        <view class="item-title">
+          <view class="cont-title">
+            <image src="../../static/img/person1.png" mode="scaleToFill"/>
+            <view>
+              <view class="cont-title-name">
+                测试用户
+              </view>
+              <view class="cont-title-time">
+                2021-11-1
+              </view>
+            </view>
+          </view>
+          <view class="item-content">
+            <view class="item-content-cont">
+            丢失一本c++书
+            </view>
+            <view class="item-content-pos">
+            2021年11月1日在6A421丢失
+            </view>
+          </view>
+          <view class="item-goods">
+            <view>评论<span class="icon-pinglun iconfont"></span>：2</view>
+            <view>赞<span class="icon-dianzan iconfont"></span>：3</view>
+            <view>关注<span class="icon-guanzhu iconfont"></span>：10</view>
+          </view>
+        </view>  
+      </view>
+
+
+      <view class="new-item">
+        <view class="item-title">
+          <view class="cont-title">
+            <image src="../../static/img/person2.png" mode="scaleToFill"/>
+            <view>
+              <view class="cont-title-name">
+                测试用户
+              </view>
+              <view class="cont-title-time">
+                2021-11-1
+              </view>
+            </view>
+          </view>
+          <view class="item-content">
+            <view class="item-content-cont">
+            丢失一本java书
+            </view>
+            <view class="item-content-pos">
+            2021年11月2日在6A421丢失
+            </view>
+          </view>
+          <view class="item-goods">
+            <view>点击<span class="icon-pinglun iconfont"></span>：2</view>
+            <view>赞<span class="icon-dianzan iconfont"></span>：3</view>
+            <view>关注<span class="icon-guanzhu iconfont"></span>：10</view>
+          </view>
+        </view>  
+      </view>
+  </view>
+</view>

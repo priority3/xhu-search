@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "../../miniprogram/miniprogram_npm/@vant/weapp/notice-bar/index"
+  },
+  "navigationBarTitleText": "失物发布"
+}

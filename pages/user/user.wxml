@@ -1,0 +1,101 @@
+<!--pages/user/user.wxml-->
+<view class="center-box">
+  <view class="center-title">
+    <van-row>
+      <van-col span="8">
+        <view class="title-avatar">
+          <image src="../../static/img/avatar6.jpg" />
+        </view>
+      </van-col>
+      <van-col span="16">
+        <view class="info">
+          <view class="title-name">
+            小帅
+          </view>
+          <view class="title-info">
+            基本信息
+          </view>
+        </view>
+      </van-col>
+    </van-row>
+
+    <van-row class="title-fun">
+      <van-col span="12">
+        <view class="fun-center">
+          <image src="../../static/img/user/rank.png" />
+          我的排名
+        </view>
+      </van-col>
+      <van-col span="12">
+        <view class="fun-center">
+          <image src="../../static/img/user/integral.png" />
+          我的积分
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+  
+<view class="background_view">
+  <!-- <view class='wave'></view> -->
+  <view class='wave_1'></view>
+  <view class='wave_2'></view>
+  <view class='wave_3'></view>
+
+</view>
+</view>
+
+<!-- 功能 -->
+<view class="fun-box">
+  <van-row gutter="20">
+    <van-col span="8">
+      <view class="fun-img-box">
+        <image src="../../static/img/user/reputation.png" />
+        <view>信誉度</view>
+      </view>
+    </van-col>
+    <van-col span="8">
+      <view class="fun-img-box">
+        <image src="../../static/img/user/newinfo.png" />
+        <view >最新公告</view>
+      </view>
+    </van-col>
+    <van-col span="8">
+      <view class="fun-img-box">
+        <image src="../../static/img/user/userinfo.png" />
+        <view >用户信息</view>
+      </view>
+    </van-col>
+  </van-row>
+</view>
+
+
+<!-- link -->
+<view class="link-box">
+  <van-cell-group>
+    <van-row>
+      <van-col span="3">
+        <image src="../../static/img/user/resultpub.png" mode="scaleToFill"/>
+      </van-col>
+      <van-col span="21" >
+        <van-cell title="我的发布"  is-link class="cont-box"/>
+      </van-col>
+    </van-row>
+    <van-row>
+      <van-col span="3">
+        <image src="../../static/img/user/data.png" mode="scaleToFill"/>
+      </van-col>
+      <van-col span="21" >
+        <van-cell title="隐私数据"  is-link class="cont-box"/>
+      </van-col>
+    </van-row>
+    <van-row>
+      <van-col span="3">
+        <image src="../../static/img/user/feedback.png" mode="scaleToFill"/>
+      </van-col>
+      <van-col span="21" >
+        <van-cell title="意见反馈"  is-link class="cont-box"/>
+      </van-col>
+    </van-row>
+
+  </van-cell-group>
+</view>

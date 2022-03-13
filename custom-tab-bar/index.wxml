@@ -1,0 +1,58 @@
+<van-tabbar active="{{ active }}" bind:change="onChange" class="tab">
+  <van-tabbar-item>
+    <image  slot="icon"
+      src="{{ list[0].icon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;" />
+    <image
+      slot="icon-active"
+      src="{{ list[0].selectIcon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    {{
+    list[0].text
+  }}</van-tabbar-item>
+  <van-tabbar-item>
+    <image  slot="icon"
+      src="{{ list[1].icon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;" />
+    <image
+      slot="icon-active"
+      src="{{ list[1].selectIcon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    {{
+    list[1].text
+  }}</van-tabbar-item>
+  <van-tabbar-item info="7">
+    <image  slot="icon"
+      src="{{ list[2].icon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;" />
+    <image
+      slot="icon-active"
+      src="{{ list[2].selectIcon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    {{
+    list[2].text
+  }}</van-tabbar-item>
+  <van-tabbar-item>
+    <image  slot="icon"
+      src="{{ list[3].icon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;" />
+    <image
+      slot="icon-active"
+      src="{{ list[3].selectIcon }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    {{
+    list[3].text
+  }}</van-tabbar-item>
+</van-tabbar>

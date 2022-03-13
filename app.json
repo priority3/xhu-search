@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/publish/publish",
+    "pages/info/info",
+    "pages/user/user"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#80c6ea",
+    "navigationBarTitleText": "xhu-search",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {},
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#585c4b",
+    "selectedColor": "#51b2e5",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,5 @@
+/* custom-tab-bar/custom-tab-bar.wxss */
+
+.tab .van-hairline--top-bottom:after {
+  border-top: 10rpx solid black !important;
+}

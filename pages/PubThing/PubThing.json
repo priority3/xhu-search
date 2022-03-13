@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-image": "../../miniprogram/miniprogram_npm/@vant/weapp/image/index",
+    "van-divider": "../../miniprogram/miniprogram_npm/@vant/weapp/divider/index",
+    "van-radio": "../../miniprogram/miniprogram_npm/@vant/weapp/radio/index",
+    "van-radio-group": "../../miniprogram/miniprogram_npm/@vant/weapp/radio-group/index",
+    "van-button": "../../miniprogram/miniprogram_npm/@vant/weapp/button/index",
+    "van-field": "../../miniprogram/miniprogram_npm/@vant/weapp/field/index"
+  },
+  "navigationBarTitleText": "失物招领"
+}
